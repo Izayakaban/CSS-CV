@@ -1,0 +1,209 @@
+/* Move the name to the very top of the page and center it. Move the contact information to the right of the name and align it to the right. */
+/* === HEADER - Name and Information SECTION === */
+header section
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    margin-bottom: 5rem;
+    text-shadow: 5px 5px 7px rgba(0, 184, 204, 0.7);
+    /*Move the name and contact info to be slightly lower than the top of the page. */;
+}
+
+/*Change the photo to be circular and a border around it. */
+header img
+{
+    border-radius: 50%;
+    border: 2px solid #5ec6e8;
+    width: 243px;
+}
+
+h1
+{
+    font-size: 3rem;
+    margin-top: 90px;
+}
+
+
+/*Change the background color of the page to black and the text color to light blue.Add a border around the page.*/
+body {
+    background-color: #000000;
+    font-family: 'Source Code Pro', monospace;
+    color: #5ec6e8;
+    border: 2px solid #5ec6e8;
+    padding: 30px;
+    margin: 30px;
+}
+
+/*Use a light blue line to seperate the Name, photo, contact information from the summary*/
+header {
+    border-bottom: 2px solid #5ec6e8;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+main section {
+    border-bottom: #5ec6e8 2px solid;
+}
+
+.section-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #5ec6e8;
+    margin-bottom: 10px;
+}
+
+.projects-toggle {
+    cursor: pointer;
+    user-select: none;
+    font-size: 30px;
+}
+
+#projects-list {
+    display: none;
+    margin-top: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.contact-title {
+    border-bottom: 2px solid #5ec6e8;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Main layout */
+.contact-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+/* Each column */
+.form-left,
+.form-center,
+.form-right {
+    flex: 1;
+}
+
+/* Alignments */
+.form-left {
+    text-align: left;
+}
+
+.form-center {
+    text-align: center;
+}
+
+.form-right {
+    text-align: left;
+}
+
+/* Inputs styling (matches your page aesthetic) */
+input, textarea {
+    width: 100%;
+    padding: 6px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #0077cc;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+/* Button styling */
+button {
+    background-color: #000000;
+    color: #5ec6e8;
+    border: 1px solid #5ec6e8;
+    padding: 8px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005fa3;
+}
+
+.form-center input[type="radio"] {
+    width: auto;
+    margin-right: 8px;
+}
+
+.form-center p,
+.form-right p {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="time"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 12px;
+
+    background-color: #000;          /* matches dark background */
+    color: #00bfff;                  /* same blue text color */
+    border: 1px solid #00bfff;       /* blue border */
+
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+/* Table container */
+.hobbies-table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    margin-top: 15px;
+    color: #00bfff;
+}
+
+.hobbies-title {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;   /* optional, looks nice with tables */
+    margin-bottom: 10px;
+}
+
+/* Table borders */
+.hobbies-table th,
+.hobbies-table td {
+    border: none;
+    border-bottom: 1px solid #00bfff;
+    padding: 6px 10px;
+}
+
+.hobbies-table td:nth-child(1) {
+    text-align: left;
+}
+
+.hobbies-table td:nth-child(2),
+.hobbies-table th:nth-child(2) {
+    text-align: center;
+}
+
+
+
+.hobbies-table td:nth-child(3) {
+    text-align: right;
+}
+
+/* Header row */
+.hobbies-table th {
+    font-weight: bold;
+    border-bottom: 2px solid #00bfff;
+}
+
+/* Row hover effect */
+.hobbies-table tr:hover {
+    background-color: rgba(0, 191, 255, 0.1);
+}
